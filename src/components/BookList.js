@@ -3,7 +3,7 @@ import BooksContext from "../contexts/Books";
 import BookShow from "./BookShow";
 
 function BookList({ books, onDelete, onEdit }) {
-  const { count, incrementCount } = useContext(BooksContext);
+  //const { count, incrementCount } = useContext(BooksContext);
 
   const renderedBooks = books.map((book) => {
     return <BookShow onEdit={onEdit} onDelete={onDelete} key={book.id} book={book} />
